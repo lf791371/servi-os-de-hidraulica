@@ -1,0 +1,431 @@
+body {
+    color: #000000;
+    background-color: #ffffff; /* Cor de fundo padrão */
+    background-image: url('./img/JP (5).jpg'); /* Caminho da imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 3px auto 5; /* Centraliza o contêiner */
+    max-width: 1680px; /* Limita a largura máxima */
+    padding: 0px; /* Espaçamento interno */
+}
+
+nav {
+    background-color: hsl(204, 64%, 44%);
+    padding: 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    margin: 10px auto 0;
+    padding: 10px;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    transition: color 0.3s ease; /* Suaviza a transição */
+}
+
+a:hover {
+    color: hsl(204, 64%, 70%);
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 15px; /* Espaçamento abaixo da logo */
+}
+
+.center img {
+    max-width: 150px; /* Limita a largura da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Logo redonda */
+    border: 5px solid hsl(204, 64%, 44%);
+}
+
+h1, h2, h3 {
+    color: hwb(0 2% 98%); /* Cor para títulos */
+    margin: 10px 0; /* Espaçamento para títulos */
+}
+
+h2 {
+    margin: 5px 0 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    margin-top: 30px; /* Espaçamento acima do rodapé */
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    color: hsl(204, 64%, 44%);
+}
+
+.especializacao, .especializacao_sobre {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center; /* Centraliza o texto dentro da especialização */
+}
+
+.especializacao h4, .projeto h3 {
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha, se necessário */
+    justify-content: space-between; /* Espaçamento uniforme entre os projetos */
+}
+
+.projeto {
+    display: flex; /* Usando flexbox para alinhar imagem e texto */
+    align-items: flex-start; /* Alinha a imagem e o texto ao topo */
+    background-color: #ffffff; /* Fundo branco para os projetos */
+    border: 1px solid rgb(232, 9, 9);
+    border-radius: 5px;
+    margin: 10px; /* Espaçamento entre os projetos */
+    padding: 15px;
+    width: calc(30% - 20px); /* Ajuste a largura para 30% */
+    box-shadow: 0 2px 5px #000000; /* Sombra leve */
+}
+
+.projeto img {
+    width: 150px; /* Ajuste a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover;  /* Garante que a imagem se ajuste sem distorcer  */
+    max-height: 400px; /* Aumente a altura maxima das imagens */ 
+ }
+
+.projeto-texto {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
+}
+
+@media (max-width: 768px) {
+    .projeto {
+        width: calc(100% - 20px); /* Ajusta a largura para 100% em telas menores */
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca os itens do menu em coluna em telas menores */
+    }
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha, se necessário */
+    justify-content: space-between; /* Espaçamento uniforme entre os projetos */
+}
+
+.projeto {
+    display: flex; /* Usando flexbox para alinhar imagem e texto */
+    align-items: flex-start; /* Alinha a imagem e o texto ao topo */
+    background-color: #ffffff; /* Fundo branco para os projetos */
+    border: 1px solid hsl(243, 100%, 50%);
+    border-radius: 5px;
+    margin: 10px; /* Espaçamento entre os projetos */
+    padding: 15px;
+    width: calc(30% - 20px); /* Ajuste a largura para 30% */
+    box-shadow: 0 2px 5px hsl(0, 0%, 100%); /* Sombra leve */
+}
+
+.projeto img {
+    width: 100px; /* Ajuste a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 300px;
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+}
+
+.projeto-texto {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
+}
+
+@media (max-width: 768px) {
+    .projeto {
+        width: calc(100% - 20px); /* Ajusta a largura para 100% em telas menores */
+    }
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 10px; /* Adiciona espaço entre os projetos */
+}
+
+.projeto {
+    display: flex; 
+    flex-direction: column; /* Coloca a imagem acima do texto */
+    align-items: center; /* Centraliza o conteúdo */
+    background-color: #ffffff;
+     border: 1px solid royalblue; 
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(30% - 20px); 
+    box-shadow: 0 2px 5px #ffffff;
+    transition: transform 0.3s; /* Efeito ao passar o mouse */
+}
+
+.projeto:hover {
+    transform: scale(1.02); /* Aumenta um pouco ao passar o mouse */
+}
+
+.projeto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do projeto */
+    height: auto; 
+    max-height: 300px; /* Limita a altura da imagem para manter proporções */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+    
+}
+
+.projeto-texto {
+    flex: 1; 
+    text-align: left; /* Centraliza o texto */
+    margin-top: auto; /* Espaço acima do texto */
+}
+
+@media (max-width: 768px) {
+    .projeto {
+        width: calc(100% - 20px); 
+    }
+}
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre os projetos */
+}
+
+.projeto {
+    display: flex; 
+    flex-direction: column; /* Coloca a imagem acima do texto */
+    align-items: center; /* Centraliza o conteúdo */
+    border: 1px solid #1f0ced;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(100% - 30px); /* Ajuste a largura para 25% */
+    box-shadow: 0 2px 5px rgba(0, 4, 255, 0.1);
+    transition: transform 0.3s; /* Efeito ao passar o mouse */
+}
+
+.projeto:hover {
+    transform: scale(1.02); /* Aumenta um pouco ao passar o mouse */
+}
+
+.projeto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do projeto */
+    height: 200px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+    border-radius: 8px; 
+}
+
+.projeto-texto {
+    flex: 1; 
+    text-align: left; /* Centraliza o texto */
+    margin-top: 20px; /* Espaço acima do texto */
+}
+
+@media (max-width: 768px) {
+    .projeto {
+        width: calc(50% - 30px); /* Ajusta para duas colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .projeto {
+        width: calc(100% - 20px); /* Ajusta para uma coluna em telas muito pequenas */
+    }
+}
+.projeto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do projeto */
+    height: 8px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+    border-radius: 8px; 
+    margin-top: 8px; /* Adiciona espaço acima da imagem */
+}
+
+header {
+    margin-bottom: 20px; /* Adiciona um espaço abaixo do header */
+}
+
+#contatos {
+    margin-top: 30px; /* Espaço acima da seção de contatos */
+}
+
+.contato-info {
+    padding: 15px;
+    border: 1px solid hwb(0 6% 94%);
+    border-radius: 5px;
+    background-color: hwb(0 100% 0%);
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.contato-info ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding */
+}
+
+.contato-info li {
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: hsl(0, 1%, 37%);
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+header .center {
+    text-align: center;
+    margin: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(233, 225, 225);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+ 
+img {
+    image-rendering: crisp-edges;
+}
+
+.sobre, /* classe para a seção "Sobre Mim" */
+.projetos, /* classe para a seção "Projetos" */
+.contatos { /* id para a seção "Contatos" */
+    margin-top: -20px; /* Move a seção 20px para cima */
+    padding: 20px 0; /* Espaçamento superior e inferior */
+}
+
+.projeto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do projeto */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 300px; /* Aumenta a altura máxima das imagens */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+}
+
+footer {
+    color: black; /* Define a cor do texto como preta */
+    text-align: left; /* Centraliza o texto */
+    padding: 10px; /* Adiciona um pouco de espaço ao redor */
+
+}
+
+ul {
+    list-style-type: none; /* Remove o estilo da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+li {
+    margin-bottom: 10px; /* Espaço entre os itens */
+    color: hsl(0, 0%, 0%); /* Cor do link */
+    text-decoration: none; /* Remove o Sublinhado */
+}
+a {
+    color: hsl(0, 0%, 0%); /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+a:hover {
+    text-decoration: none; /* Remove o sublinhado */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.botao-orcamento {
+    display: inline-block;
+    padding: 15px 30px; /* Ajuste o padding conforme necessário */
+    background-color: #007BFF; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 25px; /* Borda arredondada */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+.botao-orcamento:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#juridica-fields {
+    display: none;
+}
+
+.submit-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
